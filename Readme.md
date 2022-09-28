@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Валерий Лысенко](https://up.htmlacademy.ru/htmlcss/35/user/2158053).
-* Наставник: `Неизвестно`.
+* Student: [Val Lysenko](https://up.htmlacademy.ru/htmlcss/35/user/2158053).
+* Mentor: `Anton Popov`.
 
 ---
 
