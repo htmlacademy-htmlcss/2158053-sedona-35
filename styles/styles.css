@@ -62,6 +62,18 @@ body {
   margin-left: auto;
 }
 
+.navigation-link-search {
+  background-image: url("../images/icons/seach_icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-link-favorites {
+  background-image: url("../images/icons/favorites-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
