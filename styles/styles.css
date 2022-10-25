@@ -39,6 +39,7 @@ body {
 
 .main-container{
   flex-grow: 1;
+  text-align: center;
 }
 
 /* Header */
@@ -93,6 +94,15 @@ body {
   background-image: url('../images/icons/favorites-icon.svg');
   background-repeat: no-repeat;
   background-position: center;
+}
+
+/* Advantages */
+
+.advantages-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
 .visually-hidden {
@@ -159,6 +169,8 @@ body {
 /* Backgrounds */
 
 .title-section{
+  width: 1200px;
+  height: 485px;
   background: #83b3d3;
   background-image: url('../images/title-background.jpg');
   background-repeat: no-repeat;
