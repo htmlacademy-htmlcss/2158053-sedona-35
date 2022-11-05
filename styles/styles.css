@@ -60,6 +60,20 @@ body {
   text-align: center;
 }
 
+.button {
+  display: inline-block;
+  padding: 8px 0;
+  font-family: inherit;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+}
+
 /* Header */
 
 .page-header {
@@ -109,7 +123,6 @@ body {
 }
 
 .likes-counter {
-  font-weight: 400;
   font-size: 10px;
   line-height: 10px;
   background-color: green;
@@ -125,7 +138,6 @@ body {
   padding: 8px 20px;
   border-radius: 5px;
   font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -252,12 +264,11 @@ body {
 }
 
 .search {
+  font-family: "PT Sans", "Arial", sans-serif;
   height: 405;
 }
 
 .search-title {
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -265,9 +276,6 @@ body {
 }
 
 .search-text {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
 }
@@ -284,8 +292,7 @@ body {
 }
 
 .subscription-title {
-  font-family: 'PT Sans';
-  font-style: normal;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -293,8 +300,7 @@ body {
 }
 
 .subscription-text {
-  font-family: 'PT Sans';
-  font-style: normal;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -372,4 +378,119 @@ body {
   line-height: 40px;
   text-decoration: none;
   color:#000000;
+}
+
+/*Catalog Page*/
+
+.filter-wrapper {
+  min-height: 412px;
+  padding: 35px 70px 70px 70px;
+  box-sizing: border-box;
+  color: #ffffff;
+  background-color: #82b3d3;
+  background-image: url("../images/catalog-header-background.jpg");
+  background-repeat: no-repeat;
+}
+
+.catalog-title {
+  margin: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs {
+  display: flex;
+  list-style-type: none;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+
+.filter-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+  min-height: 104px;
+}
+
+.filter-button {
+  padding: 8px 50px;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #82b3d3;
+  border: none;
+}
+
+.reset-button {
+  background: none;
+}
+
+/* Results */
+
+.catalog-results {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.cards-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  gap: 20px;
+  box-sizing: border-box;
+  min-height: 428px;
+  padding: 20px;
+  outline: 1px solid #e6e6e6;
+  border-radius: 4px;
+}
+
+.card-type,
+.card-price {
+  font-size: 18px;
+  line-height: 21px;
+  color: green;
+}
+
+
+
+/* Pagination */
+
+.pagination {
+  font-size: 20px;
+  line-height: 36px;
+  display: flex;
+  gap: 8px;
+}
+
+.pagination-link {
+  box-sizing: border-box;
+  min-width: 60px;
+  padding: 12px;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  background-color: #82b3d3;
+  border-radius: 4px;
+}
+
+.pagination-spacing {
+  min-width: 60px;
+  padding: 12px 0;
+  text-align: center;
 }
