@@ -120,20 +120,22 @@
         <header class="catalog-header">
           <h2 class="visually-hidden">Список гостиниц</h2>
           <p class="catalog-results">Найдено гостиниц: 38</p>
-          <select class="select-control" aria-label="Сортировка">
+          <select class="cards-sort" aria-label="Сортировка">
             <option value="popular">Сначала популярное</option>
             <option value="cheap" selected>Сначала дешёвые</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
-          <a class="button-table" href="#">
-            <span class="visually-hidden">table</span>
-          </a>
-          <a class="button-slideshow" href="#">
-            <span class="visually-hidden">slideshow</span>
-          </a>
-          <a class="button-list" href="#">
-            <span class="visually-hidden">list</span>
-          </a>
+          <div class="cards-display">
+            <a class="display-button" href="#">
+              <span class="visually-hidden">table</span>
+            </a>
+            <a class="display-button" href="#">
+              <span class="visually-hidden">slideshow</span>
+            </a>
+            <a class="display-button" href="#">
+              <span class="visually-hidden">list</span>
+            </a>
+          </div>
         </header>
 
         <div class="cards-wrapper">
@@ -145,7 +147,7 @@
               <span class="card-type">Гостиница</span>
               <span class="card-price">От 4000 р</span>
               <a class="button-detail" href="#">подробнее</a>
-              <a class="button-favorites" >в избранное</a>
+              <a class="button-favorites" href="#">в избранное</a>
               <span class="stars">
                 <img class="star" src="images/icons/star-icon.svg" alt="" width="18" height="17">
                 <img class="star" src="images/icons/star-icon.svg" alt="" width="18" height="17">
@@ -163,7 +165,7 @@
             <span class="card-type">Гостиница</span>
             <span class="card-price">От 5000 р</span>
             <a class="button-detail" href="#">подробнее</a>
-            <a class="button-favorites" >в избранное</a>
+            <a class="button-favorites" href="#">в избранное</a>
             <span class="stars">
               <img class="star" src="images/icons/star-icon.svg" alt="" width="18" height="17">
               <img class="star" src="images/icons/star-icon.svg" alt="" width="18" height="17">
@@ -181,7 +183,7 @@
             <span class="card-type">Гостиница</span>
             <span class="card-price">От 2500 р</span>
             <a class="button-detail" href="#">подробнее</a>
-            <a class="button-favorites" >в избранное</a>
+            <a class="button-favorites" href="#">в избранное</a>
             <span class="stars">
               <img class="star" src="images/icons/star-icon.svg" alt="" width="18" height="17">
               <img class="star" src="images/icons/star-icon.svg" alt="" width="18" height="17">
@@ -198,7 +200,7 @@
             <span class="card-type">Гостиница</span>
             <span class="card-price">От 1500 р</span>
             <a class="button-detail" href="#">подробнее</a>
-            <a class="button-favorites" >в избранное</a>
+            <a class="button-favorites" href="#">в избранное</a>
             <span class="stars">
               <img class="star" src="images/icons/star-icon.svg" alt="" width="18" height="17">
               <img class="star" src="images/icons/star-icon.svg" alt="" width="18" height="17">
