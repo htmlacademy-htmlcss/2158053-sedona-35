@@ -442,17 +442,43 @@ body {
 /* Results */
 
 .catalog-results {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   align-self: center;
 }
 
+.cards-sort {
+  box-sizing: border-box;
+  width: 290px;
+  padding: 14px 20px 14px 20px;
+  font-family: inherit;
+
+}
+
+.catalog-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 70px;
+
+}
+
+.display-button {
+  box-sizing: border-box;
+  min-width: 48px;
+  min-height: 48px;
+  padding: 0;
+  color:#000000;
+  border: 2px solid green;
+  display: inline-block;
+}
+
 .cards-wrapper{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 92px;
-
+  gap: 50px 92px;
 }
 
 .card {
@@ -473,7 +499,7 @@ body {
 .card-price {
   font-size: 18px;
   line-height: 21px;
-  color: green;
+  color: #000000;
 }
 
 
@@ -485,7 +511,7 @@ body {
   line-height: 36px;
   display: flex;
   gap: 8px;
-  margin: 80px;
+  margin: 80px 0;
 }
 
 .pagination-link {
@@ -507,11 +533,11 @@ body {
 
 .subscription-catalog {
   width: 1200px;
-  margin: 150px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin: 50px 0;
+  padding: 50px;
+  text-align: center;
   color:#000000;
+  box-sizing: border-box;
 }
 
 .subscription-title-catalog {
