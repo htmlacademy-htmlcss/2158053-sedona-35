@@ -497,3 +497,29 @@ body {
   padding: 12px 0;
   text-align: center;
 }
+
+.subscription-catalog {
+  width: 1200px;
+  height: 415px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  color:#000000;
+}
+
+.subscription-title-catalog {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.subscription-text-catalog {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+}
