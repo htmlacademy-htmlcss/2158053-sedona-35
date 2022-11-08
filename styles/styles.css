@@ -500,11 +500,10 @@ body {
 
 .subscription-catalog {
   width: 1200px;
-  height: 415px;
+  margin: 150px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
   color:#000000;
 }
 
