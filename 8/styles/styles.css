@@ -243,6 +243,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.title-image {
+  margin-top: 50px;
+}
+
 .house-icon {
   background-image: url('../images/icons/house-icon.svg');
   background-repeat: no-repeat;
@@ -410,7 +414,7 @@ body {
 
 .filter-form {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
   row-gap: 10px;
 }
 
@@ -447,19 +451,22 @@ body {
 .cards-wrapper{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  margin: 40px;
+  gap: 92px;
+
 }
 
 .card {
   display: grid;
-  grid-template-columns: 140px 140px;
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   box-sizing: border-box;
-  min-height: 428px;
-  padding: 20px;
-  outline: 1px solid #e6e6e6;
+  padding: 20px 20px 50px;
+  border: 1px solid #e6e6e6;
   border-radius: 4px;
+}
+
+.card-link {
+  grid-column: 1 / 3;
 }
 
 .card-type,
