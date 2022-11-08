@@ -135,7 +135,7 @@ body {
 
 .button-brown {
   display: inline-block;
-  padding: 8px 20px;
+  padding: 8px 30px;
   border-radius: 5px;
   font-family: 'PT Sans';
   font-weight: 700;
@@ -156,10 +156,8 @@ body {
 
 .advantages-item {
   width: 400px;
-  height: 384px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  box-sizing: border-box;
+  padding: 150px 50px 100px;
 }
 
 .advantages-item-image {
@@ -265,7 +263,8 @@ body {
 
 .search {
   font-family: "PT Sans", "Arial", sans-serif;
-  height: 405;
+  margin: 16px 0;
+  padding: 80px 34px;
 }
 
 .search-title {
@@ -321,6 +320,8 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #82b3d3;
+  border: none;
+  font-family: inherit;
 }
 
 .footer {
@@ -447,6 +448,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
+  margin: 40px;
 }
 
 .card {
@@ -476,6 +478,7 @@ body {
   line-height: 36px;
   display: flex;
   gap: 8px;
+  margin: 80px;
 }
 
 .pagination-link {
