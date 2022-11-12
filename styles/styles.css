@@ -47,14 +47,14 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #242424;
-  background: #ffffff;
+  background: #f2f2f2;
 }
 
 .container {
   margin: 0 auto;
   width: 1200px;
   box-shadow: 0 0 34px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 
 .main-container{
@@ -374,15 +374,15 @@ body {
   width: 35px;
 }
 
-.button-table {
+.display-button:nth-child(1) {
   background-image: url('../images/icons/sort1-icon.svg');
 }
 
-.button-slideshow {
+.display-button:nth-child(2) {
   background-image: url('../images/icons/sort2-icon.svg');
 }
 
-.button-list {
+.display-button:nth-child(3) {
   background-image: url('../images/icons/sort3-icon.svg');
 }
 
