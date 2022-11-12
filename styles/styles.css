@@ -159,6 +159,12 @@ body {
 .advantages-item {
   width: 400px;
   box-sizing: border-box;
+  padding: 114px 50px 130px;
+}
+
+.accomodation-item {
+  width: 400px;
+  box-sizing: border-box;
   padding: 150px 50px 94px;
 }
 
@@ -252,19 +258,19 @@ body {
 .house-icon {
   background-image: url('../images/icons/house-icon.svg');
   background-repeat: no-repeat;
-  background-position: 50% 20px;
+  background-position: 50% 50px;
 }
 
 .hamburger-icon {
   background-image: url('../images/icons/hamburger-icon.svg');
   background-repeat: no-repeat;
-  background-position: 50% 20px;
+  background-position: 50% 50px;
 }
 
 .gift-icon {
   background-image: url('../images/icons/gift-icon.svg');
   background-repeat: no-repeat;
-  background-position: 50% 20px;
+  background-position: 50% 50px;
 }
 
 .search {
