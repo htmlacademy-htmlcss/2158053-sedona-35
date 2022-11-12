@@ -431,6 +431,24 @@ body {
   row-gap: 10px;
 }
 
+.filter-services,
+.filter-housing,
+.filter-price {
+  min-width: 150px;
+  min-height: 160px;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.filter-title {
+  margin-bottom: 32px;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
 
 .filter-button-wrapper {
   display: flex;
@@ -470,7 +488,6 @@ body {
   width: 290px;
   padding: 14px 20px 14px 20px;
   font-family: inherit;
-
 }
 
 .catalog-header {
