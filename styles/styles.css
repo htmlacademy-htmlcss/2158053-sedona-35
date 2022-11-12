@@ -53,6 +53,8 @@ body {
 .container {
   margin: 0 auto;
   width: 1200px;
+  box-shadow: 0 0 34px;
+  background-color: #f2f2f2;
 }
 
 .main-container{
@@ -157,7 +159,7 @@ body {
 .advantages-item {
   width: 400px;
   box-sizing: border-box;
-  padding: 150px 50px 100px;
+  padding: 150px 50px 94px;
 }
 
 .advantages-item-image {
@@ -290,7 +292,7 @@ body {
   background: #83b3d3;
   background-image: url('../images/subscription-background.jpg');
   background-repeat: no-repeat;
-  padding: 30px 290px 60px;
+  padding: 30px 270px 60px;
   margin: 55px 0 40px;
 }
 
@@ -453,7 +455,9 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  align-self: center;
+  margin-top: 0;
+  margin-bottom: 0;
+
 }
 
 .cards-sort {
@@ -467,6 +471,7 @@ body {
 .catalog-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 50px 70px;
 
 }
@@ -500,7 +505,7 @@ body {
 .cards-wrapper{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px 92px;
+  gap: 50px;
 }
 
 .card {
@@ -515,6 +520,7 @@ body {
 
 .card-link {
   grid-column: 1 / 3;
+  text-decoration: none;
 }
 
 .card-type,
@@ -593,7 +599,7 @@ body {
 
 .subscription-catalog {
   margin: 55px 0 40px;
-  padding: 30px 290px 60px;
+  padding: 30px 270px 60px;
   text-align: center;
   color:#000000;
   box-sizing: border-box;
