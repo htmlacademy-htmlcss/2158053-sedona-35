@@ -427,7 +427,7 @@ body {
 
 .filter-form {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   row-gap: 10px;
 }
 
@@ -441,7 +441,20 @@ body {
   border: none;
 }
 
-.filter-title {
+.filter-services {
+  margin-right: 70px;
+}
+
+.filter-housing {
+  margin-right: 70px;
+}
+
+.filter-price {
+  min-width: 288px;
+  margin-right: 70px;
+}
+
+.control-title {
   margin-bottom: 32px;
   font-family: inherit;
   font-size: 20px;
@@ -449,6 +462,39 @@ body {
   font-weight: 700;
 }
 
+.control-wrapper {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.control {
+  position: relative;
+  padding-left: 36px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 23px;
+  cursor: pointer;
+}
+
+.control:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.control::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.control-input[type="checkbox"]:checked + .control::before {
+  background: #ffffff url("../images/icons/checkbox-mark.svg") no-repeat center;
+}
 
 .filter-button-wrapper {
   display: flex;
@@ -513,15 +559,15 @@ body {
 }
 
 .display-button:nth-child(1) {
-  background: url("/images/icons/sort1-icon.svg") no-repeat 50% 50%;
+  background: url("../images/icons/sort1-icon.svg") no-repeat 50% 50%;
 }
 
 .display-button:nth-child(2) {
-  background: url("/images/icons/sort2-icon.svg") no-repeat 50% 50%;
+  background: url("../images/icons/sort2-icon.svg") no-repeat 50% 50%;
 }
 
 .display-button:nth-child(3) {
-  background: url("/images/icons/sort3-icon.svg") no-repeat 50% 50%;
+  background: url("../images/icons/sort3-icon.svg") no-repeat 50% 50%;
 }
 
 .cards-wrapper{
