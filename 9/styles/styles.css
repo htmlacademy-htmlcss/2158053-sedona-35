@@ -53,7 +53,7 @@ body {
 .container {
   margin: 0 auto;
   width: 1200px;
-  box-shadow: 0 0 34px;
+  box-shadow: 0 0 14px;
   background-color: #ffffff;
 }
 
@@ -465,7 +465,6 @@ body {
 .control-wrapper {
   display: flex;
   flex-direction: column;
-
 }
 
 
@@ -485,7 +484,7 @@ body {
 .control::before {
   content: "";
   position: absolute;
-  top: 0;
+  left: 1px;
   width: 20px;
   height: 20px;
   border-radius: 5px;
@@ -494,6 +493,40 @@ body {
 
 .control-input[type="checkbox"]:checked + .control::before {
   background: #ffffff url("../images/icons/checkbox-mark.svg") no-repeat center;
+}
+
+.filter-housing .control::before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 6px;
+  width: 10px;
+  height: 10px;
+  background-color: #3f5e72;
+  border-radius: 50%;
+}
+
+.control-price::-webkit-inner-spin-button,
+.control-price::-webkit-outer-spin-button {
+  appearance: none;
+}
+
+.control-price-wrapper {
+  display: flex;
+}
+
+.range-bar {
+  background-color: darkgreen;
 }
 
 .filter-button-wrapper {
@@ -552,6 +585,11 @@ body {
   color:#000000;
   border: 2px solid #e5e5e5;
   display: inline-block;
+  border-radius: 5px;
+}
+
+.display-button-current {
+  border: 2px solid #000000;
 }
 
 .display-button:hover {
