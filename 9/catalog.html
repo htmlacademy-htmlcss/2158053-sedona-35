@@ -61,50 +61,49 @@
         <h2 class="visually-hidden">Filter</h2>
         <form class="filter-form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="filter-services">
-            <legend class="filter-title">Инфраструктура:</legend>
-            <ul class="filter-list">
-              <li class="filter-item">
-                <input class="filter-checkbox" type="checkbox" name="pool" id="pool" checked>
-                <label class="filter-label" for="pool">Бассейн</label>
-              </li>
-              <li class="filter-item">
-                <input class="filter-checkbox" type="checkbox" name="parking" id="parking" checked>
-                <label class="filter-label" for="parking">Парковка</label>
-              </li>
-              <li class="filter-item">
-                <input class="filter-checkbox" type="checkbox" name="wifi" id="wifi">
-                <label class="filter-label" for="wifi">Wi-Fi</label>
-              </li>
-            </ul>
+            <legend class="control-title">Инфраструктура:</legend>
+            <div class="control-wrapper">
+              <input class="control-input visually-hidden" type="checkbox" name="pool" id="pool" checked>
+              <label class="control" for="pool">Бассейн</label>
+
+              <input class="control-input visually-hidden" type="checkbox" name="parking" id="parking" checked>
+              <label class="control" for="parking">Парковка</label>
+
+              <input class="control-input visually-hidden" type="checkbox" name="wifi" id="wifi">
+              <label class="control" for="wifi">Wi-Fi</label>
+            </div>
           </fieldset>
 
           <fieldset class="filter-housing">
-            <legend class="filter-title">Тип жилья:</legend>
-            <ul class="filter-list">
-              <li class="filter-item">
-                <input class="filter-radio" type="radio" name="housing" value="hotel" id="hotel" checked>
-                <label class="filter-label" for="hotel">Гостиница</label>
-              </li>
-              <li class="filter-item">
-                <input class="filter-radio" type="radio" name="housing" value="motel" id="motel">
-                <label class="filter-label" for="motel">Мотель</label>
-              </li>
-              <li class="filter-item">
-                <input class="filter-radio" type="radio" name="housing" value="apartments" id="apartments">
-                <label class="filter-label" for="apartments">Апартаменты</label>
-              </li>
-            </ul>
+            <legend class="control-title">Тип жилья:</legend>
+            <div class="control-wrapper">
+                <input class="control-input visually-hidden" type="radio" name="housing" value="hotel" id="hotel" checked>
+                <label class="control" for="hotel">Гостиница</label>
+
+
+                <input class="control-input visually-hidden" type="radio" name="housing" value="motel" id="motel">
+                <label class="control" for="motel">Мотель</label>
+
+                <input class="control-input visually-hidden" type="radio" name="housing" value="apartments" id="apartments">
+                <label class="control" for="apartments">Апартаменты</label>
+            </div>
           </fieldset>
 
           <fieldset class="filter-price">
-            <legend class="filter-title">Стоимость, ₽:</legend>
-            <p class="filter-costs">
-              <input type="number" name="cost-min" id="cost-min">
-              <input type="number" name="cost-max" id="cost-max">
-            </p>
-            <div class="filter-costs-range">
-               <input class="filter-cost" type="range" min="0" max="10000" value="900" id="slider-1">
-               <input class="filter-cost" type="range" min="0" max="10000" value="900" id="slider-2">
+            <legend class="control-title">Стоимость, ₽:</legend>
+            <div class="control-price-wrapper">
+              <label class="control-price-label">
+                <input class="control-price min-price" type="number" name="min-price" value="0">
+              </label>
+              <label class="control-price-label">
+                <input class="control-price max-price" type="number" name="max-price" value="9000">
+              </label>
+            </div>
+            <div class="range-slider">
+              <div class="range-bar">
+                <button class="button range-toggle range-toggle-left" type="button"></button>
+                <button class="button range-toggle range-toggle-right" type="button"></button>
+              </div>
             </div>
           </fieldset>
 
