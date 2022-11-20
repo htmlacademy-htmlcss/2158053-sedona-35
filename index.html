@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <script src="js/script.js"></script>
   </head>
   <body>
     <div class="container">
@@ -79,22 +80,22 @@
             <p class="advantages-text">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="advantages-item-image dark-color color4">
+            <img class="advantages2" src="./images/photos/advantages2.jpg" width="800" height="384" alt="bridge">
             <div class="advantages-item">
               <h3 class="advantages-title">Там есть мост дьявола</h3>
               <p class="advantages-text">Да,по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
-            <img class="advantages2" src="./images/photos/advantages2.jpg" width="800" height="384" alt="bridge">
           </li>
-          <li class="advantages-item house-icon light-color1">
+          <li class="accomodation-item house-icon light-color1">
             <h3 class="advantages-title">Жилье</h3>
             <p class="advantages-text">Рекомендуем пожить в настоящем мотеле, все как в кино</p>
           </li>
-          <li class="advantages-item hamburger-icon">
+          <li class="accomodation-item hamburger-icon">
             <h3 class="advantages-title">Еда</h3>
             <p class="advantages-text">Всегда заказывайте топовый фирменный бургер,
               вы не разочаруетесь!</p>
           </li>
-          <li class="advantages-item gift-icon light-color1">
+          <li class="accomodation-item gift-icon light-color1">
             <h3 class="advantages-title">Сувениры</h3>
             <p class="advantages-text">Не только китайского, но и настоящего местного производства!</p>
           </li>
@@ -105,7 +106,7 @@
         <h2 class="search-title">Заинтересовались?</h2>
         <p class="search-text">Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="button button-search-link" href="#">поиск гостиницы в седоне</a>
+        <a class="button search-button" href="#">поиск гостиницы в седоне</a>
       </section>
 
       <section class="subscription">
@@ -152,6 +153,53 @@
         </a>
       </section>
     </footer>
+    </div>
+
+    <div class="modal modal-close">
+      <div class="modal-content">
+        <button class="button modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+          <svg class="close-button-icon" aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+             d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479 1.78288L6.19817 7.49057L0.490479 13.1983L1.78279
+             14.4906L7.49048 8.78288L13.1982 14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z" fill="#000000"/>
+          </svg>
+        </button>
+
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="control-field control-field-text">
+            <label class="modal-control" for="check-in">Дата Заезда:</label>
+            <span class="input-wrapper-text">
+              <input class="modal-input" type="text" id="check-in" name="check-in-date" placeholder="Укажите дату"
+                value="27 апреля 2020" required>
+              <span class="modal-alert error">Мы не можем отправить вас в прошлое.</span>
+            </span>
+          </p>
+          <p class="control-field control-field-text">
+            <label class="modal-control" for="departure">Дата Выезда:</label>
+            <span class="input-wrapper-text">
+              <input class="modal-input" type="text" id="departure" name="departure-date" placeholder="Укажите дату"
+                value="1 сентября 2023" required>
+              <span class="modal-alert">На эти даты есть свободные номера. Пока есть.</span>
+            </span>
+          </p>
+          <p class="control-field control-field-number">
+            <label class="modal-control" for="adult"> Взрослые:</label>
+            <span class="input-wrapper-number">
+              <input class="modal-input" type="number" id="adult" name="adults" value="2" required>
+            </span>
+          </p>
+          <p class="control-field control-field-number">
+            <label class="modal-control" for="child"> Дети: </label>
+            <span class="input-wrapper-number">
+              <input class="modal-input" type="number" id="child" name="children" value="2" required>
+            </span>
+          </p>
+          <button class="button modal-button" type="submit">Найти</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
